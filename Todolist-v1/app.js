@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
 const port = process.env.PORT || 5000;
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://admin-puneet:Puneet123@cluster0.y2iem.mongodb.net/toDolistDB',{useNewUrlParser:true,useUnifiedTopology:true});
+mongoose.connect('YOUR_MONGOOSE_CLUSTER_ACCOUNT',{useNewUrlParser:true,useUnifiedTopology:true});
 
 const itemSchema = new mongoose.Schema({
     item : {
